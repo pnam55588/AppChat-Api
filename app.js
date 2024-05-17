@@ -22,7 +22,7 @@ server.listen(3300, () => {console.log(`listening on *:${3300}`);});
 socket(server);
 
 const server2 = createServer(app);
-// app.set('port', 3000);
+app.set('port', 3000);
 server2.listen(3000, () => {
   console.log('rest api server listening on port ' + 3000);
 });
